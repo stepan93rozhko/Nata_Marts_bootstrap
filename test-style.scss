@@ -53,14 +53,14 @@ $colorTextBlack: black;
                     display: none;
                     @media (max-width: 543px) {
                         display: inline;
-                        margin-top: -50px;
+                        margin-top: -200px;
                         margin-left: 35px;
                         display: grid;
                         border: none;
                         cursor: pointer;
                         & img{
-                            margin-left: -5px;
-                            margin-top: -5px;
+                            margin-left: -17.2px;
+                            margin-top: -10px;
                         }
                     }
                 }
@@ -92,11 +92,11 @@ $colorTextBlack: black;
             &-nav{
                 padding-top: 25px;
                 margin-left: -30px;
-                @media (max-width: 543px) { 
-                    display: none;
-                }
+                
                 &-item{
-
+                    @media (max-width: 543px){
+                        display: none;
+                    }
                     &-link{
                         font-family: "Lato";
                         font-size: 18px;
@@ -113,7 +113,7 @@ $colorTextBlack: black;
                 }
             }
             
-            &-logo{
+            &-logo {
                 @media (max-width: 543px) { 
                     margin-left: auto;
                     margin-right: auto;
@@ -141,7 +141,7 @@ $colorTextBlack: black;
                 font-size: 120px;
                 font-family: "PlayfairDisplay";
                 font-weight: bold;
-                margin-top: 180px;
+                margin-top: 90px;
                 color: $colorTextBlack;
                 @media (max-width: 543px) {
                     font-size: 55px;
@@ -165,14 +165,7 @@ $colorTextBlack: black;
             }
         }
         &-button{
-
-            @media (max-width: 543px) { 
-                   margin-left: auto;
-                   margin-right: auto;
-                   width: 220px;
-                   margin-top: -80px;
-            }
-             &-but{
+            &-but{
                 font-size: 18px;
                 font-family: "Lato";
                 font-weight: bold;
@@ -185,6 +178,12 @@ $colorTextBlack: black;
                 background: none;
                 margin-top: 150px;
                 outline: none;
+                @media (max-width: 543px) { 
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 220px;
+                    margin-top: 40px;
+                }
             }
         }
     }
