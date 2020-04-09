@@ -41,6 +41,45 @@ $colorTextBlack: black;
         top: -1667px;
         position: relative;
         z-index: 2;
+        &-internet{
+            @media (max-width: 543px) {
+                float: right;
+            }
+            &-block{
+               
+                & button::after{
+                    display: none;
+                }
+                & button.btn:focus{
+                    box-shadow: 0 0 0 0.2rem rgba(189, 191, 192, 0.4);
+                }
+                & button{
+                    display: none;
+                    @media (max-width: 543px) {
+                        
+                        margin-top: -80px;
+                        display: inline;
+                        display: grid;
+                        border: none;
+                        cursor: pointer;
+                        & img{
+                            
+                        }
+                    }
+                }
+            }
+        }
+        & .dropdown-menu{
+            background: none;
+            border: none;
+            & .dropdown-item{
+                margin-top: 5px;
+                &:hover{
+                    background: none;
+                }
+            }
+        }
+
         &-mobMenu{
             &-block {
                 & button::after{
@@ -53,7 +92,7 @@ $colorTextBlack: black;
                     display: none;
                     @media (max-width: 543px) {
                         display: inline;
-                        margin-top: -200px;
+                        margin-top: -70px;
                         margin-left: 35px;
                         display: grid;
                         border: none;
@@ -64,9 +103,13 @@ $colorTextBlack: black;
                         }
                     }
                 }
-                
+                &-dropdown{
+                    display: inline;
+                    & a:hover{
+                        font-weight: bold;
+                    }
+                }
                 &-button{
-                    
                     width: 40px;
                     height: 40px;
                     background: none;
@@ -118,16 +161,15 @@ $colorTextBlack: black;
                     margin-left: auto;
                     margin-right: auto;
                     width: 80px;
+                    margin-top: -10px;
+                    
                 }
             }
             &-networks{
                 @media (max-width: 543px) { 
-                    display: grid;
-                    float: right;
-                    margin-top: -100px;
+                    display: none;
                 }
                 &-link{
-                    
                     & img{
                         margin-top: 30px;
                         margin-left: 10px;
@@ -144,8 +186,9 @@ $colorTextBlack: black;
                 margin-top: 90px;
                 color: $colorTextBlack;
                 @media (max-width: 543px) {
-                    font-size: 55px;
+                    font-size: 80px;
                     text-align: center;
+                    margin-top: 200px;
                 } 
 
             }
@@ -160,7 +203,7 @@ $colorTextBlack: black;
                 color: $colorTextBlack;
                 @media (max-width: 543px) { 
                     text-align: center;
-                    font-size: 18px;
+                    font-size: 20px;
                 }
             }
         }
@@ -182,7 +225,7 @@ $colorTextBlack: black;
                     margin-left: auto;
                     margin-right: auto;
                     width: 220px;
-                    margin-top: 40px;
+                    margin-top: 70px;
                 }
             }
         }
