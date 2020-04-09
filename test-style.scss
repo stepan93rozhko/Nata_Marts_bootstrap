@@ -92,7 +92,7 @@ $colorTextBlack: black;
                     display: none;
                     @media (max-width: 543px) {
                         display: inline;
-                        margin-top: -70px;
+                        margin-top: -60px;
                         margin-left: 35px;
                         display: grid;
                         border: none;
@@ -186,7 +186,7 @@ $colorTextBlack: black;
                 margin-top: 90px;
                 color: $colorTextBlack;
                 @media (max-width: 543px) {
-                    font-size: 80px;
+                    font-size: 60px;
                     text-align: center;
                     margin-top: 200px;
                 } 
@@ -203,7 +203,7 @@ $colorTextBlack: black;
                 color: $colorTextBlack;
                 @media (max-width: 543px) { 
                     text-align: center;
-                    font-size: 20px;
+                    font-size: 19px;
                 }
             }
         }
